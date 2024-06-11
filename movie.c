@@ -34,12 +34,10 @@ int movie(int user) {
             audi = audi2;
 
         do {
-            flag = 0; // Reset flag for each user
+            flag = 0;
             printf("Enter the seat number you want to sit in (A to F) and (1 to 5): ");
             scanf("%s", row);
             clear_input_buffer();
-
-            // Check if the seat is already taken
             for (int j = 0; j < i; j++) {
                 if (strcmp(seat[j], row) == 0) {
                     printf("Seat is already taken.\n");
@@ -48,8 +46,6 @@ int movie(int user) {
                 }
             }
         } while (flag == 1);
-
-        // Store the seat if not already taken
         strcpy(seat[i], row);
     }
 
