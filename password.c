@@ -21,6 +21,7 @@ void login();
 int main() {
     int choice;
 
+
     do {
         clearScreen();
         printf("Password Manager\n");
