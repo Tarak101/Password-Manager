@@ -34,7 +34,7 @@ int movie(int user) {
             audi = audi2;
 
         do {
-            flag = 0;
+            flag = 0; // Reset flag for each user
             printf("Enter the seat number you want to sit in (A to F) and (1 to 5): ");
             scanf("%s", row);
             clear_input_buffer();
